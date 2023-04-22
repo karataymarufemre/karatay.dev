@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Header menuClick={menuClick} menuClicked={menuClicked}/>
-      <Menu menuClicked={menuClicked} />
+      <Menu menuClicked={menuClicked} menuClick={menuClick} />
       <div className='fixed w-screen h-full mt-36 bottom-0 py-2 px-3 md:p-4 z-10'>
         <div className={`h-full w-full ${menuClicked ? 'bg-palatte-bg-secondary' : 'bg-palatte-bg'} transition-all duration-1000 overflow-x-scroll`}>
           <div className='pt-10 px-10 md:pt-16 md:px-16'>
