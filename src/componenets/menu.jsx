@@ -10,7 +10,7 @@ function Menu(props) {
         `}>
             <div className={`transition-all h-full pl-10 duration-1000 ${props.menuClicked ? 'bg-palatte-bg-secondary' : 'bg-palatte-bg'}`}>
                 <MenuLogoSection/>
-                <div className='flex flex-col mt-8 w-128 h-full text-palette-not-bg text-3xl font-bold tracking-wider'>
+                <div className='flex flex-col w-128 h-full text-palette-not-bg text-3xl font-bold tracking-wider'>
                     <MenuButton 
                         href="/"
                         name="HOME"
@@ -21,12 +21,23 @@ function Menu(props) {
                         onClickProp={()=>props.menuClick(props.menuClicked)}
                     />
                     <MenuButton 
-                        href="/"
+                        href="#experience"
+                        name="EXPERIENCE"
+                        onClickProp={()=>props.menuClick(props.menuClicked)}
+                    />
+                    <MenuButton 
+                        href="#education"
+                        name="EDUCATION"
+                        onClickProp={()=>props.menuClick(props.menuClicked)}
+                    />
+                    <MenuButton 
+                        href="#projects"
                         name="PROJECTS"
+                        onClickProp={()=>props.menuClick(props.menuClicked)}
                     />
                     <MenuButton 
                         href="/"
-                        name="LINKS"
+                        name="LINKS(soon)"
                     />
                 </div>
             </div>

@@ -7,7 +7,6 @@ function Header(props) {
 
     return (
         <div className={`fixed w-screen 
-        pt-2 px-3 md:pt-4 md:px-4 
         z-20 overflow-hidden`}>
             <div className={`flex h-full w-full px-10 pt-16 pb-4 transition-all duration-1000  ${props.menuClicked ? 'bg-palatte-bg-secondary' : 'bg-palatte-bg'}`}>
                 <div className='flex z-30' onMouseEnter={() => setMenuHover(true)} onMouseLeave={() => setMenuHover(false)}>
@@ -29,8 +28,12 @@ function Header(props) {
                         onClickProp={()=>handleScroll("experience")}
                     />
                     <HeaderMenuButton 
+                        name="EDUCATION"
+                        onClickProp={()=>handleScroll("education")}
+                    />
+                    <HeaderMenuButton 
                         name="PROJECTS"
-                        href="/"
+                        onClickProp={()=>handleScroll("projects")}
                     />
                     <HeaderMenuButton 
                         name="LINKS"
